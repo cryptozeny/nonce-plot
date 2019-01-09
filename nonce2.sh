@@ -7,7 +7,7 @@ COIN_OPTION="-rpcuser=username -rpcpassword=password -testnet"
 
 BLOCKS=$($COIN_CLI $COIN_OPTION getblockcount)
 
-START_BLOCK=$(expr 1 + $(tail -n1 nonce.csv | awk -F , '{print $1}'))
+START_BLOCK=$(expr 1 + $(tail -n1 $COIN_NAME | awk -F , '{print $1}'))
 
 for i in `seq $START_BLOCK $BLOCKS`; do
 	BLOCK_HASH=$($COIN_CLI $COIN_OPTION getblockhash $i)
