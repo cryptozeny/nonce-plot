@@ -1,15 +1,15 @@
-nonce-plot
+nonce-plot for sugarchain
 ==========
 
 This will plot block nonce value.
 
+![alt text](https://github.com/cryptozeny/nonce-plot/blob/master/screenshot-sugarchain.png)
+
 Usage
 -----
 
-First of all, you should launch bitcoind or bitcoin-qt with server=1.
+First of all, you should launch sugarchain or sugarchain-qt with server=1.
 
 ```
-$ ./nonce.sh
-$ make nonce.png
+$ ./nonce2.sh
 ```
-
