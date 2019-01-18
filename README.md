@@ -7,7 +7,9 @@ This will plot block nonce value.
 
 Dependacies
 ----
+```
 gnuplot seq jq tee awk
+```
 
 Usage
 -----
